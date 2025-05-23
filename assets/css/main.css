@@ -1,0 +1,401 @@
+/*Google Fonts. (n.d.). Google Fonts. https://fonts.google.com/*/
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+Body{
+    font-family: 'delius';
+    margin: 0;
+    padding: 0;
+}
+/* Nav */
+.GV__nav{
+    min-height: 45px;
+    background-color: #3d855c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.GV__nav--list{
+    padding-left: 0;
+    margin: auto 16px;
+    display: flex;
+}
+
+/* Nav dropdown */
+
+.GV__nav--list2{
+    align-content: center;
+}
+
+.GV__nav--logo{
+    width: 50px;
+    height: auto;
+}
+
+.GV__nav--item{
+    color: white;
+    margin: auto 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.GV__nav--Dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.GV__nav--item DropBtn{
+    border: none;
+    cursor: pointer;
+}
+
+.GV__nav--Dropdown-Content{
+    display: none;
+    position: absolute;
+    background-color: #66de9a;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.GV__nav--Dropdown-Content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.GV__nav--Dropdown-Content a:hover{
+    background-color: #6ca986;
+}
+
+.GV__nav--Dropdown:hover .GV__nav--Dropdown-Content{
+    display: block;
+}
+
+.GV__nav--Dropdown:hover .GV__nav--item DropBtn{
+    background-color: #3e8e41;
+}
+
+/* Nav mobile dropdown */
+
+.GV__nav--Dropdown-mobile{
+    position: relative;
+    display: none;
+}
+
+.GV__nav--item DropBtn-mobile{
+    border: none;
+    cursor: pointer;
+}
+
+.DropBtn-mobile{
+    color: white;
+    margin-left: 10px;
+}
+
+.GV__nav--Dropdown-Content-mobile{
+    display: none;
+    position: absolute;
+    background-color: #66de9a;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.GV__nav--Dropdown-Content-mobile a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.GV__nav--Dropdown-Content-mobile a:active{
+    background-color: #6ca986;
+}
+
+.GV__nav--Dropdown-mobile:active .GV__nav--Dropdown-Content-mobile{
+    display: block;
+}
+
+.GV__nav--Dropdown-mobile:active .GV__nav--item DropBtn-mobile{
+    background-color: #3e8e41;
+}
+
+/* Search bar */
+
+.GV__nav--SContainer{
+    display: flex;
+    border: 2px solid #093915;
+    border-radius: 20px;
+    background-color: white;
+    width: 200px;
+    height: 25px;
+}
+
+.GV__nav--search{
+    border: none;
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    width: 150px;
+    height: 25px;
+}
+
+.GV__nav--SBtn{
+    background-color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.GV__banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    padding: 40px;
+    box-sizing: border-box;
+    background-clip: border-box;
+    background-image: url(../img/banner.webp);
+    background-size: contain;
+    background-position: center;
+    background-origin: padding-box;
+    margin-top: 40px;
+}
+
+.GV__banner--medialogos {
+  position: fixed;
+  top: 80%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.GV__banner--medialogos img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.GV__banner--medialogos img:hover {
+  transform: scale(1.1);
+}
+
+/*Best Seller-New Product list */
+
+.GV__body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GV__product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.GV__product--card{
+    height: 350px;
+    width: 200px;
+    border: 1.5px solid #3d855c;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+.GV__product--tag--BL{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    background-color: rgba(144, 222, 196, 0.5);
+    left: 5px;
+    top: 5px;
+    border-radius: 2px;
+    text-align: center;
+    align-content: center;
+}
+
+.GV__product--tag--N{
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: rgba(223, 214, 127, 0.5);
+    left: 5px;
+    top: 5px;
+    border-radius: 2px;
+    text-align: center;
+    align-content: center;
+}
+
+.GV__product--img{
+    height: 200px;
+    width: 180px;
+}
+
+.GV__product--detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GV__product--title{
+    font-size: 16px;
+    color: #093915;
+    font-weight: 900;
+    text-align: center;
+}
+
+.GV__product--price{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* All Btns */
+
+.GV__product--allBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.GV__product--button{
+    background-color: #24246a;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px;
+    height: 30px;
+    width: 80px;
+    margin-top: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.GV__product--buttonView{
+    background-color: #4d734a;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px;
+    height: 30px;
+    width: 80px;
+    margin-top: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+p{
+    margin: 8px !important;
+    padding: 2px !important;
+}
+
+.GV__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #245d53;
+}
+
+/* Footer */
+
+.GV__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3d855c;
+    color: white;
+    width: 100%;
+}
+
+.GV__footer--brand{
+    display: flex;
+    flex-direction: column; 
+}
+
+.GV__footer--link{
+    display: flex;
+    flex-direction: row;
+}
+
+.GV__footer--about{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive */
+/* Ipad pro only */
+@media only screen and (max-width: 1200px) {
+    .GV__product{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/* others Ipad lines */
+@media only screen and (max-width: 992px) {
+    .GV__product{
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* All the mobile lines */
+@media only screen and (max-width: 576px) {
+   .GV__product{
+    grid-template-columns: 1fr 1fr;
+    }
+    
+    .GV__product--card{
+    height: 350px;
+    width: 170px;
+    }
+    
+    .GV__product--img{
+    height: 200px;
+    width: 150px;
+    }
+    
+    .GV__nav--SContainer{
+    display: none;
+    }
+    
+    .GV__nav--Dropdown-mobile{
+    display: inline-block;
+    }
+    
+    .GV__header{
+        display: none;
+    }
+}
