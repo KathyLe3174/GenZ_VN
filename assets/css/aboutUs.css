@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+Body{
+    font-family: 'delius';
+    margin: 0;
+    padding: 0;
+}
+
+.GV__nav{
+    min-height: 45px;
+    background-color: #3d855c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.GV__nav--list{
+    padding-left: 0;
+    margin: auto 16px;
+    display: flex;
+}
+
+.GV__nav--list2{
+    align-content: center;
+}
+
+.GV__nav--logo{
+    width: 50px;
+    height: auto;
+}
+
+.GV__nav--item{
+    color: white;
+    margin: auto 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.GV__nav--Dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.GV__nav--item DropBtn{
+    border: none;
+    cursor: pointer;
+}
+
+.GV__nav--Dropdown-Content{
+    display: none;
+    position: absolute;
+    background-color: #66de9a;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.GV__nav--Dropdown-Content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.GV__nav--Dropdown-Content a:hover{
+    background-color: #66de9a;
+}
+
+.GV__nav--Dropdown:hover .GV__nav--Dropdown-Content{
+    display: block;
+}
+
+.GV__nav--Dropdown:hover .GV__nav--item DropBtn{
+    background-color: #3e8e41;
+}
+
+.GV__nav--Dropdown-mobile{
+    position: relative;
+    display: none;
+}
+
+.GV__nav--item DropBtn-mobile{
+    border: none;
+    cursor: pointer;
+}
+
+.DropBtn-mobile{
+    color: white;
+    margin-left: 10px;
+}
+
+.GV__nav--Dropdown-Content-mobile{
+    display: none;
+    position: absolute;
+    background-color: #66de9a;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.GV__nav--Dropdown-Content-mobile a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.GV__nav--Dropdown-Content-mobile a:active{
+    background-color: #6ca986;
+}
+
+.GV__nav--Dropdown-mobile:active .GV__nav--Dropdown-Content-mobile{
+    display: block;
+}
+
+.GV__nav--Dropdown-mobile:active .GV__nav--item DropBtn-mobile{
+    background-color: #3e8e41;
+}
+
+.GV__nav--SContainer{
+    display: flex;
+    border: 2px solid #093915;
+    border-radius: 20px;
+    background-color: white;
+    width: 200px;
+    height: 25px;
+}
+
+.GV__nav--search{
+    border: none;
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+    width: 150px;
+    height: 25px;
+}
+
+.GV__nav--SBtn{
+    background-color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.GV__about--banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 30px;
+    box-sizing: border-box;
+    background-clip: border-box;
+    background-image: url(../img/banner2.webp);
+    background-size: contain;
+    background-position: center;
+    background-origin: padding-box;
+}
+
+.GV__body{
+    margin: 0 20px;
+}
+
+.GV__para{
+    font-size: 24px;
+}
+
+.GV__title{
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #245d53;
+}
+
+.GV__about{
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
+
+.GV__about--detail{
+    margin-left: 30px;
+}
+
+.GV__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #3d855c;
+    color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.GV__footer--brand{
+    display: flex;
+    flex-direction: column; 
+}
+
+.GV__footer--link{
+    display: flex;
+    flex-direction: row;
+}
+
+.GV__footer--about{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .GV__about--banner{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .GV__footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .GV__body {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .GV__about--banner{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .GV__nav--SContainer{
+        display: none;
+    }
+    
+    .GV__nav--Dropdown-mobile{
+        display: inline-block;
+    }
+    
+    .GV__header{
+        display: none;
+    }
+    
+    .GV__title{
+        font-size: 24px;
+    }
+    
+    .GV__para{
+        font-size: 16px;
+    }
+    
+    .GV__about{
+        font-size: 16px;
+    }
+    
+    body{
+        margin-bottom: 100px;
+    }
+}
