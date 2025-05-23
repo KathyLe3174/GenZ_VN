@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>About us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/aboutUs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+    <body>
+    <!-- Nav bar-->
+    <div class="GV__nav">
+        <div class="GV__nav--list">
+            <!-- Logo -->
+            <div><img src="./assets/img/logo.webp" class="GV__nav--logo" alt="logoBrand"/></div>
+            <div class="GV__nav--list2">
+                <div class="GV__header">
+                <!-- Main navigation links -->
+                <a class="GV__nav--item" href="shopping.html">Home</a>
+                <a href="aboutus.html" class="GV__nav--item">About Us</a>
+                <!-- Dropdown menu for Products -->
+                <div class="GV__nav--Dropdown">
+                    <a class="GV__nav--item DropBtn">Products</a>
+                    <div class="GV__nav--Dropdown-Content">
+                        <a href="./shopping.html#BS">Best Seller</a>
+                        <a href="./shopping.html#NA">New Arrival</a>
+                    </div>
+                </div>
+                <!-- Link to shopping cart -->
+                <a class="GV__footer--about" href="shoppingCart.html">Shopping cart</a>
+                </div>
+                <!-- Mobile dropdown menu -->
+                <div class="GV__nav--Dropdown-mobile">
+                    <div class="DropBtn-mobile"><i class="fa-solid fa-bars"></i><!-- Menu icon --></div>
+                    <div class="GV__nav--Dropdown-Content-mobile">
+                        <a href="shopping.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="#BS">Best Seller</a>
+                        <a href="#NA">New Arrival</a>
+                        <a href="shoppingCart.html">Shopping cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="GV__nav--list">
+            <!-- Search bar and button -->
+            <div class="GV__nav--SContainer">
+                <input type="search" id="search" class="GV__nav--search" placeholder="Search"/>
+                <button class="GV__nav--SBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <!-- Login/Register links -->
+            <a class="GV__nav--item" href="login.html">Login</a>
+            <a class="GV__nav--item" href="register.html">Register</a>
+        </div>
+    </div>
+    <!-- About Us -->
+    <div class="GV__body">
+    <h1 class="GV__title">About Us</h1>
+        <p class="GV__para">GenZ Vietnam is an online store specializing in high-quality school supplies for students and professionals. 
+        From notebooks and stationery to backpacks and art materials, we provide everything you need to succeed in your studies and creativity. 
+        Discover stylish and affordable tools designed to meet the needs of the new generation.</p>
+    <!-- Contact Us Section -->
+    <h1 class="GV__title">Contact Us</h1>
+        <div class="GV__about">
+            <div>
+                <p>Adress:</p>
+                <p>Email</p>
+                <p>Tel</p>
+            </div>
+            <div class="GV__about--detail">
+                <p>Perth, Western Australia</p>
+                <p>GenzVN@gmail.com</p>
+                <p>(61+)123456789</p>
+            </div>
+        </div>
+    <!-- Follow Us Section -->
+    <h1 class="GV__title">Follow Us</h1>
+        <div class="GV__about">
+            <div>
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Tiktok</p>
+            </div>
+            <div class="GV__about--detail">
+                <p>GenZ.VietNam</p>
+                <p>GenZ.VietNam</p>
+                <p>GenZ.VietNam</p>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section (background image likely handled in CSS) -->
+    <div class="GV__about--banner"></div>
+    <!-- Footer -->
+        <div class="GV__footer">
+            <!-- Left side: brand and policy -->
+            <div class="GV__footer--brand">
+                <a>&copy; GenZ VN</a>
+                <p>Privacy Policy</p>
+            </div>
+            <!-- Right side: links -->
+            <div class="GV__footer--link">
+                <!-- Link to About Us page -->
+                <a href="aboutus.html" class="GV__footer--about">About us</a>
+                <!-- Link to Shopping Cart page -->
+                <a class="GV__footer--about" href="shoppingCart.html">Shopping cart</a>
+            </div>
+        </div>
+    </body>
+</html>

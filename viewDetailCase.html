@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Detail</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+    
+    <body>
+    <!-- Nav bar -->
+        <div class="GV__nav">
+            <div class="GV__nav--list">
+                <!-- Logo -->
+                <div><img src="./assets/img/logo.webp" class="GV__nav--logo" alt="logoBrand"/></div>
+                <div class="GV__nav--list2">
+                    <div class="GV__header">
+                    <!-- Main navigation links -->
+                    <a class="GV__nav--item" href="shopping.html">Home</a>
+                    <a href="aboutus.html" class="GV__nav--item">About Us</a>
+                    <!-- Dropdown menu for Products -->
+                    <div class="GV__nav--Dropdown">
+                        <a class="GV__nav--item DropBtn">Products</a>
+                        <div class="GV__nav--Dropdown-Content">
+                        <a href="#BS">Best Seller</a>
+                        <a href="#NA">New Arrival</a>
+                        </div>
+                    </div>
+                    <!-- Link to shopping cart -->
+                    <a class="GV__footer--about" href="shoppingCart.html">Shopping cart</a>
+                    </div>
+                    <!-- Mobile dropdown menu -->
+                    <div class="GV__nav--Dropdown-mobile">
+                        <div class="DropBtn-mobile"><i class="fa-solid fa-bars"></i><!-- Menu icon --></div>
+                        <div class="GV__nav--Dropdown-Content-mobile">
+                            <a href="shopping.html">Home</a>
+                            <a href="aboutus.html">About Us</a>
+                            <a href="#BS">Best Seller</a>
+                            <a href="#NA">New Arrival</a>
+                            <a href="shoppingCart.html">Shopping cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="GV__nav--list">
+                <!-- Search bar and button -->
+                <div class="GV__nav--SContainer">
+                <input type="search" id="search" class="GV__nav--search" placeholder="Search"/>
+                <button class="GV__nav--SBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i><!-- Search icon -->
+                </button>
+                </div>
+                <!-- Login/Register links -->
+                <a class="GV__nav--item" href="login.html">Login</a>
+                <a class="GV__nav--item" href="register.html">Register</a>
+            </div>
+        </div>
+    <!-- Detail -->
+    <div class="GV__detail">
+    <img class="GV__detail--img" src="./assets/img/hopbut.webp" alt="case" title="Blue case">
+    <div class="GV__detail--allinfo">
+        <h1>BLUE CASE</h1>
+        <h2>A portable and convenient case for student.</h2>
+        <h3>Item code: 12345</h3>
+        <h2>Price: $30 AUD</h2>
+    
+        <div class="GV__detail--info">
+            <h2>Amount</h2>
+            <a class="GV__detail--directions" href="caseDirections">Directions for use</a>
+        </div>
+        <div>
+        <label for="mumber" id="quantity"></label>
+        <input type="number" id="number" min="0" max="100"/>
+        </div>
+        <br/>
+        <div class="GV__detail--allBtn">
+        <button class="GV__detail--button--buy">Buy Now</button>
+        <button class="GV__detail--button--add">Add in cart</button>
+        </div>
+    </div> 
+    </div>
+    <div class="GV__detail--line"></div>
+    <div class="GV__detail--PInfo">
+        <h2>Product Informations</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+            <li>Consectetur adipiscing elit quisque faucibus ex sapien vitae.</li>
+            <li>Ex sapien vitae pellentesque sem placerat in id.</li>
+            <li>Placerat in id cursus mi pretium tellus duis.</li>
+            <li>Pretium tellus duis convallis tempus leo eu aenean.</li>
+        </ul>
+    </div>
+    <br/>
+    <!-- Footer -->
+    <div class="GV__footer">
+        <div class="GV__footer--brand">
+        <a>&copy; GenZ VN</a>
+        <p>Privacy Policy</p>
+        </div>
+        <div class="GV__footer--link">
+        <a href="aboutus.html" class="GV__footer--about">About us</a>
+        <a class="GV__footer--about">Shopping cart</a>
+        </div>
+    </div>
+    
+    </body>
+</html>

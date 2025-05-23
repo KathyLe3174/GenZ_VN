@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Register</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/register.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+    <body>
+        <!-- Registration form container -->
+        <div class="GV__register--container">
+            <!-- Logo displayed above the form -->
+            <div class="GV__register--logo">
+                <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <!-- Registration form -->
+            <form class="GV__register">
+            <div class="GV__register--row">
+                <!-- Full Name input -->
+                <label class="GV__register--label">Full Name:</label>
+                <input class="GV__register--input" type="text" id="full-name" placeholder="FULL NAME">
+            </div> 
+            <div class="GV__register--row">
+                <!-- Username input -->
+                <label class="GV__register--label">User Name:</label>
+                <input class="GV__register--input" type="text" id="user-name" placeholder="USERNAME">
+            </div> 
+            <div class="GV__register--row">
+                <!-- Email input -->
+                <label class="GV__register--label">Email:</label>
+                <input class="GV__register--input" type="text" id="email" placeholder="EMAIL">
+            </div>
+            <div class="GV__register--row">
+                <!-- Password input -->
+                <label class="GV__register--label">Password:</label>
+                <input class="GV__register--input" type="password" id="password" placeholder="PASSWORD">
+            </div>
+            <div class="GV__register--row">
+                <!-- Confirm Password input -->
+                <label class="GV__register--label">Confirm Password:</label>
+                <input class="GV__register--input" type="password" id="confirmpassword" placeholder="CONFIRM PASSWORD">
+            </div>
+            <!-- Register button -->
+            <input type="submit" value="REGISTER" class="GV__register--button"/>
+            <a href="login.html">Have already? Login now</a><!-- Link to login page -->
+            </form>
+        </div>
+    </body>
+</html>

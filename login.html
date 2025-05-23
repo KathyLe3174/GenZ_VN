@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/css/login.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    </head>
+    <body>
+    <!-- Login Form Container -->
+    <div class="GV__form--container">
+        <!-- Logo icon (shopping cart) -->
+        <div class="GV__form--logo">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <!-- Login Form -->
+        <form class="GV__form">
+            <div class="GV__form--row">
+                <!-- Username Input -->
+                <label class="GV__form--label">User Name:</label>
+                <input class="GV__form--input" type="text" id="user-name" placeholder="USERNAME">
+            </div> 
+            <div class="GV__form--row">
+                <!-- Password Input -->
+                <label class="GV__form--label">Password:</label>
+                <input class="GV__form--input" type="password" id="password" placeholder="PASSWORD">
+            </div>
+            <!-- Submit/Login Button -->
+            <input type="submit" value="LOGIN" class="GV__form--login"/>
+            <!-- Additional Links -->
+            <a href="forgotPass.html">Forgot Password</a><!-- Link for password recovery -->
+            <a href="register.html">Create an Account</a><!-- Link to registration page -->
+        </form>
+    </div>
+    </body>
+</html>
